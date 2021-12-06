@@ -1,7 +1,7 @@
 import pickle
 from main import clf
-#from sklearn.pipeline import Pipeline
-#from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 
 
 def test_accuracy():
