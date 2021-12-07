@@ -22,5 +22,6 @@ def test_accuracy():
 def test_standard_scaler():
     isPipeline = isinstance(clf, Pipeline)
     assert isPipeline, 'classifer object clf should be an instance of sklearn Pipeline'
+    steps = clf.steps
     firstStep = steps[0][1]
     assert isinstance(firstStep, StandardScaler)
